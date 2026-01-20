@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vyvo Tu Copiloto de Vida | Nexo IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030712;
+            color: #f9fafb;
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #2dd4bf, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .glass-card:hover {
+            transform: translateY(-8px);
+            border-color: #2dd4bf;
+            background: rgba(17, 24, 39, 0.6);
+            box-shadow: 0 20px 40px -20px rgba(45, 212, 191, 0.3);
+        }
+        .step-number {
+            background: linear-gradient(135deg, #2dd4bf, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-effect {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(45, 212, 191, 0.1) 0%, transparent 70%);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navbar sutil -->
+    <nav class="sticky top-0 z-50 p-6 glass-card border-none backdrop-blur-md">
+        <div class="flex justify-between items-center max-w-6xl mx-auto">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center font-bold text-black text-xs">N</div>
+                <span class="font-bold tracking-tight text-white">NEXO IA</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-gray-400">
+                <a href="#filosofia" class="hover:text-teal-500 transition">Filosofía</a>
+                <a href="#socialfi" class="hover:text-teal-500 transition">SocialFi</a>
+                <a href="#tecnologia" class="hover:text-teal-500 transition">Tecnología</a>
+            </div>
+            <div class="w-8 md:hidden"></div> <!-- Placeholder para mobile -->
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative px-6 py-24 text-center max-w-5xl mx-auto overflow-hidden">
+        <div class="glow-effect top-0 left-1/4"></div>
+        <span class="px-4 py-1.5 rounded-full border border-teal-500/30 text-teal-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-8 inline-block">Innovación · Salud · Inteligencia Artificial</span>
+        
+        <h1 class="font-bold mb-8 leading-[1.1] tracking-tighter">
+            <span class="text-5xl md:text-7xl block mb-2">Vyvo Tu Copiloto de Vida</span>
+            <span class="text-2xl md:text-4xl text-gray-300 block font-medium">Tu Salud es <span class="gradient-text italic font-bold">tu Mayor Activo</span></span>
+        </h1>
+
+        <p class="text-xl text-gray-400 mb-12 leading-relaxed max-w-3xl mx-auto font-light">
+            Únete a la revolución de <strong>Vyvo SocialFi</strong>. Un ecosistema donde el monitoreo biométrico se encuentra con la Inteligencia Artificial para devolverte el control de tu información y empoderar tu bienestar.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="https://joinsocialfi.com/PCA2MDQKC/vai" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-10 py-5 bg-teal-500 text-black font-bold rounded-2xl hover:bg-teal-400 transition shadow-2xl shadow-teal-500/30 text-lg">
+                Comenzar mi Transformación
+            </a>
+            <a href="#socialfi" class="w-full sm:w-auto px-10 py-5 bg-white/5 text-white font-bold rounded-2xl border border-white/10 hover:bg-white/10 transition text-lg">
+                ¿Qué es SocialFi?
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de Filosofía -->
+    <section id="filosofia" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-6 leading-tight">Las corporaciones usan tus datos. <br><span class="text-teal-500">Vyvo te da la soberanía.</span></h2>
+                <p class="text-gray-400 mb-6 leading-relaxed">
+                    Históricamente, tu información de salud ha sido monetizada por terceros. En Vyvo, utilizamos tecnología de vanguardia para garantizar la <strong>Soberanía del Dato</strong> a través de dispositivos inteligentes.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3 text-sm text-gray-300">
+                        <span class="text-teal-500 text-xl">✦</span> Tú eres el único dueño de tu información personal encriptada.
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-gray-300">
+                        <span class="text-teal-500 text-xl">✦</span> Acceso a una red global que valora el bienestar y la tecnología.
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-gray-300">
+                        <span class="text-teal-500 text-xl">✦</span> Oportunidad de generar beneficios mediante la expansión del ecosistema.
+                    </li>
+                </ul>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-gradient-to-r from-teal-500 to-blue-500 opacity-20 blur-2xl rounded-full"></div>
+                <div class="glass-card p-10 rounded-3xl relative">
+                    <div class="text-5xl mb-6">💹</div>
+                    <h3 class="text-2xl font-bold mb-4">Economía Colaborativa</h3>
+                    <p class="text-gray-400 text-sm italic">
+                        "En el ecosistema de Vyvo, tu compromiso con el bienestar se integra a una comunidad global. Al compartir esta tecnología, participas en un modelo de recompensas diseñado para el crecimiento mutuo."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SocialFi & Rewards Section -->
+    <section id="socialfi" class="py-24 px-6 bg-slate-900/20 border-y border-white/5">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Un modelo de incentivos real</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto leading-relaxed">Combinamos la salud preventiva con un sistema de recompensas por comunidad y comercialización de activos digitales.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="glass-card p-8 rounded-2xl text-center">
+                <div class="w-16 h-16 bg-teal-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-3xl text-teal-500">🤝</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Recompensas por Red</h3>
+                <p class="text-gray-400 text-sm">Obtén beneficios directos por cada nuevo miembro que se sume a tu comunidad y adquiera la tecnología Vyvo.</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl text-center">
+                <div class="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-3xl text-blue-500">📱</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Productos Inteligentes</h3>
+                <p class="text-gray-400 text-sm">Desde el Bio-Reloj hasta el Smart Ring, cada dispositivo es una puerta de entrada a tu propia gestión de salud.</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl text-center">
+                <div class="w-16 h-16 bg-purple-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <span class="text-3xl text-purple-500">🚀</span>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Escalabilidad Social</h3>
+                <p class="text-gray-400 text-sm">Aprovecha el poder del SocialFi para transformar tus recomendaciones en un activo financiero sostenible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnología Detallada -->
+    <section id="tecnologia" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Tecnología de Monitoreo</h2>
+            <p class="text-gray-400 leading-relaxed">Dispositivos equipados con sensores avanzados integrados al ecosistema VAI OS.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-6 rounded-2xl border border-white/5 hover:border-teal-500/50 transition">
+                <h4 class="text-teal-500 font-bold mb-2 uppercase text-xs tracking-widest">Bio-Sensor PPG</h4>
+                <p class="text-sm text-gray-400 font-light leading-relaxed">Monitoreo constante de frecuencia cardíaca para el conocimiento de tus patrones vitales.</p>
+            </div>
+            <div class="p-6 rounded-2xl border border-white/5 hover:border-teal-500/50 transition">
+                <h4 class="text-teal-500 font-bold mb-2 uppercase text-xs tracking-widest">Saturación SpO2</h4>
+                <p class="text-sm text-gray-400 font-light leading-relaxed">Medición de oxígeno en sangre para entender tu rendimiento y calidad de descanso.</p>
+            </div>
+            <div class="p-6 rounded-2xl border border-white/5 hover:border-teal-500/50 transition">
+                <h4 class="text-teal-500 font-bold mb-2 uppercase text-xs tracking-widest">ECG Integrado</h4>
+                <p class="text-sm text-gray-400 font-light leading-relaxed">Capacidad de seguimiento preventivo desde tu muñeca mediante electrocardiogramas rápidos.</p>
+            </div>
+            <div class="p-6 rounded-2xl border border-white/5 hover:border-teal-500/50 transition">
+                <h4 class="text-teal-500 font-bold mb-2 uppercase text-xs tracking-widest">VAI Life CoPilot</h4>
+                <p class="text-sm text-gray-400 font-light leading-relaxed">Asistente de IA que interpreta tus datos biométricos para darte recomendaciones de estilo de vida.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo empezar -->
+    <section class="py-24 px-6 max-w-5xl mx-auto bg-gradient-to-b from-transparent to-teal-500/5 rounded-3xl">
+        <h2 class="text-4xl font-bold text-center mb-16">Inicia tu Camino</h2>
+        <div class="grid md:grid-cols-3 gap-12 text-center relative">
+            <div class="absolute top-1/2 left-0 w-full h-0.5 bg-white/5 -z-10 hidden md:block"></div>
+            <div class="relative bg-transparent">
+                <span class="w-16 h-16 rounded-full bg-slate-900 border-2 border-teal-500 flex items-center justify-center mx-auto text-2xl font-bold text-teal-500 mb-6">1</span>
+                <h3 class="text-xl font-bold mb-2">Adquiere tu Dispositivo</h3>
+                <p class="text-gray-400 text-sm">Elige el hardware que mejor se adapte a tu estilo y activa tu suscripción al ecosistema.</p>
+            </div>
+            <div class="relative bg-transparent">
+                <span class="w-16 h-16 rounded-full bg-slate-900 border-2 border-teal-500 flex items-center justify-center mx-auto text-2xl font-bold text-teal-500 mb-6">2</span>
+                <h3 class="text-xl font-bold mb-2">Empodera tu Salud</h3>
+                <p class="text-gray-400 text-sm">Vincula tu Life CoPilot y comienza a recibir análisis inteligentes sobre tu bienestar físico.</p>
+            </div>
+            <div class="relative bg-transparent">
+                <span class="w-16 h-16 rounded-full bg-slate-900 border-2 border-teal-500 flex items-center justify-center mx-auto text-2xl font-bold text-teal-500 mb-6">3</span>
+                <h3 class="text-xl font-bold mb-2">Expande la Red</h3>
+                <p class="text-gray-400 text-sm">Comparte la oportunidad Vyvo con otros y comienza a recibir recompensas por cada recomendación exitosa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-32 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-bold mb-8">Toma las riendas de <span class="text-teal-500 italic">tu futuro.</span></h2>
+            <p class="text-gray-400 text-lg mb-12 leading-relaxed">
+                Nexo IA te acerca a las herramientas que definen el mañana. Únete a un ecosistema donde la salud y la tecnología se encuentran para tu beneficio.
+            </p>
+            <a href="https://joinsocialfi.com/PCA2MDQKC/vai" target="_blank" rel="noopener noreferrer" class="inline-block px-12 py-6 bg-teal-500 text-black font-black rounded-2xl hover:scale-105 transition-all shadow-2xl shadow-teal-500/40 text-xl uppercase tracking-widest">
+                Activar mi Life CoPilot Ahora
+            </a>
+            <p class="mt-8 text-xs text-gray-500 uppercase tracking-[0.3em]">Integrado estratégicamente por Nexo IA</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 text-center border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center text-left">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-6 h-6 bg-teal-500 rounded-full flex items-center justify-center font-bold text-black text-[10px]">N</div>
+                    <span class="font-bold tracking-tight text-white">NEXO IA</span>
+                </div>
+                <p class="text-gray-500 text-sm max-w-sm">Especialista en arquitectura de IA y diseño estratégico. Llevo la tecnología de vanguardia al servicio de tu bienestar y productividad.</p>
+            </div>
+            <div class="md:text-right">
+                <p class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-2">Socio Independiente Autorizado</p>
+                <p class="text-gray-600 text-[10px] leading-relaxed">Este sitio es propiedad de un Socio Independiente de Vyvo. <br> Todas las marcas y logos de Vyvo son propiedad de sus respectivos dueños.</p>
+            </div>
+        </div>
+        <div class="mt-12 text-[10px] text-gray-700 uppercase tracking-[0.5em]">
+            &copy; 2025 Nexo IA · Todos los derechos reservados
+        </div>
+    </footer>
+
+</body>
+</html>
