@@ -46,7 +46,6 @@
 </head>
 <body class="antialiased">
 
-    <!-- Navbar sutil -->
     <nav class="sticky top-0 z-50 p-6 glass-card border-none backdrop-blur-md">
         <div class="flex justify-between items-center max-w-6xl mx-auto">
             <div class="flex items-center gap-2">
@@ -58,15 +57,14 @@
                 <a href="#socialfi" class="hover:text-teal-500 transition">SocialFi</a>
                 <a href="#tecnologia" class="hover:text-teal-500 transition">Tecnología</a>
             </div>
-            <div class="w-8 md:hidden"></div> <!-- Placeholder para mobile -->
+            <div class="w-8 md:hidden"></div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="relative px-6 py-24 text-center max-w-5xl mx-auto overflow-hidden">
         <div class="glow-effect top-0 left-1/4"></div>
         <span class="px-4 py-1.5 rounded-full border border-teal-500/30 text-teal-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-8 inline-block">Innovación · Salud · Inteligencia Artificial</span>
-        
+       
         <h1 class="font-bold mb-8 leading-[1.1] tracking-tighter">
             <span class="text-5xl md:text-7xl block mb-2">Vyvo Tu Copiloto de Vida</span>
             <span class="text-2xl md:text-4xl text-gray-300 block font-medium">Tu Salud es <span class="gradient-text italic font-bold">tu Mayor Activo</span></span>
@@ -75,7 +73,7 @@
         <p class="text-xl text-gray-400 mb-12 leading-relaxed max-w-3xl mx-auto font-light">
             Únete a la revolución de <strong>Vyvo SocialFi</strong>. Un ecosistema donde el monitoreo biométrico se encuentra con la Inteligencia Artificial para devolverte el control de tu información y empoderar tu bienestar.
         </p>
-        
+       
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="https://joinsocialfi.com/PCA2MDQKC/vai" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-10 py-5 bg-teal-500 text-black font-bold rounded-2xl hover:bg-teal-400 transition shadow-2xl shadow-teal-500/30 text-lg">
                 Comenzar mi Transformación
@@ -86,7 +84,40 @@
         </div>
     </section>
 
-    <!-- Sección de Filosofía -->
+    <section id="agentes" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="glass-card p-12 rounded-[3rem] border-teal-500/20 bg-gradient-to-br from-slate-900 to-black">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Productividad <span class="text-teal-500 italic">Multimodal</span></h2>
+                    <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                        El software de Vyvo va más allá de los biométricos. Tu Agente de IA está diseñado para ser una extensión de tu capacidad profesional.
+                    </p>
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <div class="text-teal-500 text-2xl font-bold">01.</div>
+                            <p class="text-gray-400"><strong class="text-white">Ingeniería de Tareas & Desarrollo:</strong> Capacidad avanzada para la generación y depuración de código (Python, JS, SQL), automatización de Web Scraping y arquitectura de micro-sitios. Tu agente no solo escribe el script, entiende la lógica de negocio detrás de cada línea.</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-teal-500 text-2xl font-bold">02.</div>
+                            <p class="text-gray-400"><strong class="text-white">Inteligencia de Flujo Total:</strong> Un asistente que realmente te conoce. Redacta correos, organiza tu calendario basándose en tu rendimiento físico real y genera minutas ejecutivas automáticas, liberando hasta un 40% de tu tiempo operativo semanal.</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-teal-500 text-2xl font-bold">03.</div>
+                            <p class="text-gray-400"><strong class="text-white">Soberanía Local:</strong> A diferencia de otras IA, tus agentes operan bajo tu propiedad de datos en la VSC Network, garantizando que tu propiedad intelectual y personal nunca salga de tu control.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-teal-500/5 p-12 rounded-3xl border border-teal-500/10 text-center glass-card">
+                    <div class="text-6xl mb-6">🤖</div>
+                    <h3 class="text-3xl font-bold mb-2 text-white">VAI OS</h3>
+                    <p class="text-sm text-gray-500 uppercase tracking-[0.2em] mb-6">Sistema Operativo de IA</p>
+                    <div class="h-1 w-20 bg-teal-500 mx-auto mb-8"></div>
+                    <p class="italic text-gray-400 text-lg">"Tu IA no solo te aconseja, ejecuta por ti."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="filosofia" class="py-24 px-6 max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-16 items-center">
             <div>
@@ -119,13 +150,12 @@
         </div>
     </section>
 
-    <!-- SocialFi & Rewards Section -->
     <section id="socialfi" class="py-24 px-6 bg-slate-900/20 border-y border-white/5">
         <div class="max-w-6xl mx-auto text-center mb-16">
             <h2 class="text-4xl font-bold mb-4">Un modelo de incentivos real</h2>
             <p class="text-gray-400 max-w-2xl mx-auto leading-relaxed">Combinamos la salud preventiva con un sistema de recompensas por comunidad y comercialización de activos digitales.</p>
         </div>
-        
+       
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div class="glass-card p-8 rounded-2xl text-center">
                 <div class="w-16 h-16 bg-teal-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -151,13 +181,12 @@
         </div>
     </section>
 
-    <!-- Tecnología Detallada -->
     <section id="tecnologia" class="py-24 px-6 max-w-6xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-4xl font-bold mb-4">Tecnología de Monitoreo</h2>
             <p class="text-gray-400 leading-relaxed">Dispositivos equipados con sensores avanzados integrados al ecosistema VAI OS.</p>
         </div>
-        
+       
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="p-6 rounded-2xl border border-white/5 hover:border-teal-500/50 transition">
                 <h4 class="text-teal-500 font-bold mb-2 uppercase text-xs tracking-widest">Bio-Sensor PPG</h4>
@@ -178,30 +207,28 @@
         </div>
     </section>
 
-    <!-- Cómo empezar -->
     <section class="py-24 px-6 max-w-5xl mx-auto bg-gradient-to-b from-transparent to-teal-500/5 rounded-3xl">
         <h2 class="text-4xl font-bold text-center mb-16">Inicia tu Camino</h2>
         <div class="grid md:grid-cols-3 gap-12 text-center relative">
             <div class="absolute top-1/2 left-0 w-full h-0.5 bg-white/5 -z-10 hidden md:block"></div>
             <div class="relative bg-transparent">
                 <span class="w-16 h-16 rounded-full bg-slate-900 border-2 border-teal-500 flex items-center justify-center mx-auto text-2xl font-bold text-teal-500 mb-6">1</span>
-                <h3 class="text-xl font-bold mb-2">Adquiere tu Dispositivo</h3>
+                <h3 class="text-xl font-bold mb-2 text-white">Adquiere tu Dispositivo</h3>
                 <p class="text-gray-400 text-sm">Elige el hardware que mejor se adapte a tu estilo y activa tu suscripción al ecosistema.</p>
             </div>
             <div class="relative bg-transparent">
                 <span class="w-16 h-16 rounded-full bg-slate-900 border-2 border-teal-500 flex items-center justify-center mx-auto text-2xl font-bold text-teal-500 mb-6">2</span>
-                <h3 class="text-xl font-bold mb-2">Empodera tu Salud</h3>
+                <h3 class="text-xl font-bold mb-2 text-white">Empodera tu Salud</h3>
                 <p class="text-gray-400 text-sm">Vincula tu Life CoPilot y comienza a recibir análisis inteligentes sobre tu bienestar físico.</p>
             </div>
             <div class="relative bg-transparent">
                 <span class="w-16 h-16 rounded-full bg-slate-900 border-2 border-teal-500 flex items-center justify-center mx-auto text-2xl font-bold text-teal-500 mb-6">3</span>
-                <h3 class="text-xl font-bold mb-2">Expande la Red</h3>
+                <h3 class="text-xl font-bold mb-2 text-white">Expande la Red</h3>
                 <p class="text-gray-400 text-sm">Comparte la oportunidad Vyvo con otros y comienza a recibir recompensas por cada recomendación exitosa.</p>
             </div>
         </div>
     </section>
 
-    <!-- CTA Final -->
     <section class="py-32 px-6 text-center">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-5xl font-bold mb-8">Toma las riendas de <span class="text-teal-500 italic">tu futuro.</span></h2>
@@ -215,7 +242,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="py-16 text-center border-t border-white/5">
         <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center text-left">
             <div>
@@ -231,7 +257,7 @@
             </div>
         </div>
         <div class="mt-12 text-[10px] text-gray-700 uppercase tracking-[0.5em]">
-            &copy; 2025 Nexo IA · Todos los derechos reservados
+            &copy; 2026 Nexo IA · Todos los derechos reservados
         </div>
     </footer>
 
