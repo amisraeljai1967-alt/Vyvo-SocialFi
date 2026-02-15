@@ -42,9 +42,64 @@
             background: radial-gradient(circle, rgba(45, 212, 191, 0.1) 0%, transparent 70%);
             z-index: -1;
         }
+
+        /* --- ESTILOS DEL BOTÓN DE WHATSAPP --- */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-icon {
+            width: 60px;
+            height: 60px;
+            background-color: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover .whatsapp-icon {
+            transform: scale(1.1);
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.5);
+        }
+        .whatsapp-label {
+            background: rgba(17, 24, 39, 0.9);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 12px;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid #25d366;
+            opacity: 0;
+            transform: translateX(10px);
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover .whatsapp-label {
+            opacity: 1;
+            transform: translateX(0);
+        }
     </style>
 </head>
 <body class="antialiased">
+
+    <!-- BOTÓN DE WHATSAPP CONFIGURADO -->
+    <a href="https://wa.me/5218182527041?text=Hola%20Lourdes%2C%20vi%20tu%20sitio%20Nexo%20IA%20y%20me%20interesa%20la%20convocatoria%20de%20Fundadores%20en%20M%C3%A9xico.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <span class="whatsapp-label">Hablar con Lourdes</span>
+        <div class="whatsapp-icon">
+            <svg width="35" height="35" viewBox="0 0 24 24" fill="white">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217s.231.006.332.009c.109.004.258-.041.404.314l.542 1.312c.058.14.096.303.003.488l-.204.412c-.09.183-.189.307-.081.493.108.187.479.792 1.029 1.282.71.633 1.307.83 1.494.924.188.094.298.077.407-.05s.471-.547.597-.734c.125-.187.251-.158.423-.095l1.417.666c.172.081.286.12.33.193.044.073.044.419-.1.824z"/>
+                <path d="M12.004 2c-5.523 0-10 4.477-10 10a9.956 9.956 0 0 0 1.638 5.43L2 22l4.733-1.244A9.956 9.956 0 0 0 12.004 22c5.522 0 10-4.478 10-10s-4.478-10-10-10zm.031 18.269c-1.634 0-3.21-.438-4.584-1.265l-.328-.196-2.738.719.731-2.67-.215-.341a8.217 8.217 0 0 1-1.261-4.344c0-4.541 3.7-8.241 8.243-8.241s8.244 3.7 8.244 8.241-3.701 8.241-8.243 8.241z"/>
+            </svg>
+        </div>
+    </a>
 
     <nav class="sticky top-0 z-50 p-6 glass-card border-none backdrop-blur-md">
         <div class="flex justify-between items-center max-w-6xl mx-auto">
@@ -64,7 +119,7 @@
     <section class="relative px-6 py-24 text-center max-w-5xl mx-auto overflow-hidden">
         <div class="glow-effect top-0 left-1/4"></div>
         <span class="px-4 py-1.5 rounded-full border border-teal-500/30 text-teal-500 text-[10px] font-bold uppercase tracking-[0.2em] mb-8 inline-block">Innovación · Salud · Inteligencia Artificial</span>
-       
+        
         <h1 class="font-bold mb-8 leading-[1.1] tracking-tighter">
             <span class="text-5xl md:text-7xl block mb-2">Vyvo Tu Copiloto de Vida</span>
             <span class="text-2xl md:text-4xl text-gray-300 block font-medium">Tu Salud es <span class="gradient-text italic font-bold">tu Mayor Activo</span></span>
@@ -73,7 +128,7 @@
         <p class="text-xl text-gray-400 mb-12 leading-relaxed max-w-3xl mx-auto font-light">
             Únete a la revolución de <strong>Vyvo SocialFi</strong>. Un ecosistema donde el monitoreo biométrico se encuentra con la Inteligencia Artificial para devolverte el control de tu información y empoderar tu bienestar.
         </p>
-       
+        
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="https://joinsocialfi.com/PCA2MDQKC/vai" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-10 py-5 bg-teal-500 text-black font-bold rounded-2xl hover:bg-teal-400 transition shadow-2xl shadow-teal-500/30 text-lg">
                 Comenzar mi Transformación
@@ -155,7 +210,7 @@
             <h2 class="text-4xl font-bold mb-4">Un modelo de incentivos real</h2>
             <p class="text-gray-400 max-w-2xl mx-auto leading-relaxed">Combinamos la salud preventiva con un sistema de recompensas por comunidad y comercialización de activos digitales.</p>
         </div>
-       
+        
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div class="glass-card p-8 rounded-2xl text-center">
                 <div class="w-16 h-16 bg-teal-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -186,7 +241,7 @@
             <h2 class="text-4xl font-bold mb-4">Tecnología de Monitoreo</h2>
             <p class="text-gray-400 leading-relaxed">Dispositivos equipados con sensores avanzados integrados al ecosistema VAI OS.</p>
         </div>
-       
+        
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="p-6 rounded-2xl border border-white/5 hover:border-teal-500/50 transition">
                 <h4 class="text-teal-500 font-bold mb-2 uppercase text-xs tracking-widest">Bio-Sensor PPG</h4>
